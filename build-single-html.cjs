@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const {execSync} = require('child_process');
 
-const ROOT = '/Users/yoyo/Downloads/伊甸流体-v4';
+const ROOT = __dirname;
 const OUT = path.join(ROOT, 'dist-single');
 
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, {recursive: true});
@@ -85,11 +85,11 @@ if (hasCSS) {
 }
 
 const html = `<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>伊甸流体：意向正念空间 | Eden Fluids</title>
+  <title>Eden fluid</title>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4/hands.js" crossorigin="anonymous"><\/script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/face_mesh.js" crossorigin="anonymous"><\/script>
 ${styleBlock}

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>伊甸流体：意向正念空间 | Eden Fluids</title>
+  <title>Eden fluid</title>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4/hands.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/face_mesh.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13824,10 +13824,10 @@
     tempCtx.fillStyle = "black";
     tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
     tempCtx.fillStyle = "white";
-    tempCtx.font = "bold 72px 'STKaiti', 'Kaiti', 'KaiTi_GB2312', 'Microsoft YaHei', sans-serif";
+    tempCtx.font = "600 72px 'Inter', 'Helvetica Neue', sans-serif";
     tempCtx.textAlign = "center";
     tempCtx.textBaseline = "middle";
-    tempCtx.fillText("\u4F0A\u7538\u6D41\u6C99", tempCanvas.width / 2, tempCanvas.height / 2);
+    tempCtx.fillText("Eden fluid", tempCanvas.width / 2, tempCanvas.height / 2);
     const imgData = tempCtx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
     const data = imgData.data;
     const step = 2;

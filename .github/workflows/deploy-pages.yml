@@ -33,7 +33,9 @@ jobs:
         run: npm run build
 
       - name: Include standalone HTML
-        run: cp '伊甸流体-fixed.html' 'dist/伊甸流体-fixed.html'
+        run: |
+          cp '伊甸流体-fixed.html' 'dist/eden-fluid.html'
+          cp '伊甸流体-fixed.html' 'dist/伊甸流体-fixed.html'
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

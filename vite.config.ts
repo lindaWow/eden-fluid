@@ -7,7 +7,7 @@ import {defineConfig} from 'vite';
 const projectRoot = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
-  base: '/eden-fluid-v4/',
+  base: '/eden-fluid/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

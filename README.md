@@ -1,10 +1,20 @@
-# 伊甸流体 · Eden Fluid
+# Eden fluid
 
 **一座会回应身体与声音的流体花园。**
 
-《伊甸流体》是一件运行在浏览器中的数字交互艺术作品。粒子并不组成一幅固定的画：它们随鼠标、手势、表情与环境声音聚散，生长为花、涟漪和流波。观众不是旁观者，而是让这座花园持续变化的参与者。
+Eden fluid 是一件运行在浏览器中的数字交互艺术作品。粒子并不组成一幅固定的画：它们随鼠标、手势、表情与环境声音聚散，生长为花、涟漪和流波。观众不是旁观者，而是让这座花园持续变化的参与者。
 
-**[进入在线作品 →](https://lindawow.github.io/eden-fluid-v4/)**  ·  [打开独立 HTML 版本](https://lindawow.github.io/eden-fluid-v4/伊甸流体-fixed.html)
+**[进入在线作品 →](https://lindawow.github.io/eden-fluid/)**  ·  [打开独立 HTML 版本](https://lindawow.github.io/eden-fluid/eden-fluid.html)
+
+## 作品画面
+
+![Eden fluid 暗夜模式中的彩色粒子曼陀罗](docs/images/mandala-night.jpg)
+
+*暗夜模式：滚轮交互生成的曼陀罗图案。*
+
+| 花种生长 | 明亮模式中的曼陀罗 |
+| --- | --- |
+| ![紫色粒子花朵在暗夜模式中生长](docs/images/flower-night.jpg) | ![明亮模式中的同心彩色曼陀罗](docs/images/mandala-day.jpg) |
 
 ## 作品概念
 
@@ -47,4 +57,4 @@ npm run build
 
 ---
 
-*Eden Fluid is a browser-based interactive artwork: a garden of particles shaped by movement, gesture, expression, and sound. Explore it with a mouse, or opt in to camera and microphone interaction. No Gemini account or API key is required.*
+*Eden fluid is a browser-based interactive artwork: a garden of particles shaped by movement, gesture, expression, and sound. Explore it with a mouse, or opt in to camera and microphone interaction. No Gemini account or API key is required.*

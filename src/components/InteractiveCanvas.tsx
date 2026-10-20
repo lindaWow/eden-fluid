@@ -46,12 +46,12 @@ const getTitlePoints = (): { x: number; y: number }[] => {
   tempCtx.fillStyle = "black";
   tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
 
-  // 渲染优雅中式行楷/雅黑流沙文字
+  // 将作品名采样为开场粒子文字
   tempCtx.fillStyle = "white";
-  tempCtx.font = "bold 72px 'STKaiti', 'Kaiti', 'KaiTi_GB2312', 'Microsoft YaHei', sans-serif";
+  tempCtx.font = "600 72px 'Inter', 'Helvetica Neue', sans-serif";
   tempCtx.textAlign = "center";
   tempCtx.textBaseline = "middle";
-  tempCtx.fillText("伊甸流沙", tempCanvas.width / 2, tempCanvas.height / 2);
+  tempCtx.fillText("Eden fluid", tempCanvas.width / 2, tempCanvas.height / 2);
 
   const imgData = tempCtx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
   const data = imgData.data;
@@ -1229,7 +1229,7 @@ export const InteractiveCanvas: React.FC<InteractiveCanvasProps> = ({
           }
         }
 
-        // A_2. 文字粒子“伊甸流沙”开屏定格及散开自然融合动效 (满足需求 5 & 优化)
+        // A_2. 作品名粒子的开屏定格及散开自然融合动效
         if (i < particleCount * 0.45) {
           // 初始逐步淡入文字，并使其比未交互前略显高透莹烁
           if (p.alpha < p.targetAlpha) {
