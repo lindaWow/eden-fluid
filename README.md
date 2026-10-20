@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 伊甸流体 v4
 
-# Run and deploy your AI Studio app
+一个基于 React、Canvas 与 MediaPipe 的交互式数字艺术空间。手势和面部追踪在浏览器中运行，不需要 API Key。
 
-This contains everything you need to run your app locally.
+## 在线体验
 
-View your app in AI Studio: https://ai.studio/apps/3276f29b-3bbe-4483-94d5-613693cb4d58
+[直接打开伊甸流体](https://lindawow.github.io/eden-fluid-v4/)
 
-## Run Locally
+[直接打开独立 HTML 版本](https://lindawow.github.io/eden-fluid-v4/伊甸流体-fixed.html)
 
-**Prerequisites:**  Node.js
+浏览器可能会请求摄像头和麦克风权限。项目使用 MediaPipe 的 jsDelivr CDN 加载手势和面部追踪资源，因此首次访问需要联网。
 
+## 本地运行
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+需要 Node.js 20 或更高版本。
+
+```bash
+npm install
+npm run dev
+```
+
+## 构建
+
+```bash
+npm run build
+```
+
+推送到 `main` 分支后，GitHub Actions 会自动构建并发布到 GitHub Pages。
