@@ -1,0 +1,11 @@
+{
+  "name": "伊甸流沙",
+  "description": "融合 teamLab 动态艺术美学与 Refik Anadol 数据雕塑质感的极致交互式数字媒介空间。支持摄像头面部多模态追踪：视线蓄力解构繁星、微笑爆发流体蝶涌、合眼静默润洗春雨。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
