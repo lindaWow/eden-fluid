@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --mint: #E8F5E9;
+  --sage: #CFD8DC;
+  --pearl: #F5F5F5;
+  --gold: rgba(212, 175, 55, 0.4);
+  --pink: #F8BBD0;
+  --lilac: #E1BEE7;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* 带有数字颗粒材质的高奢胶片颗粒层 */
+.grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* 极其丝滑、粘稠的环境色彩流体 */
+.silk-flow {
+  background: linear-gradient(90deg, transparent, var(--pink), var(--lilac), transparent);
+}
